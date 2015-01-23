@@ -3,6 +3,7 @@
 	"author" : "Jeeeyul Lee<jeeeyul@gmail.com>",
 	"description" : "Generates constants for XCode Projects",
 	"main" : "index.js",
+	"version": "0.0.3",
 
 	"scripts" : {
 		"test" : "grunt"
