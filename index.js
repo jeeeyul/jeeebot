@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var cli = require("cli");
 var filewalker = require('filewalker');
 var _ = require("underscore-keypath");
