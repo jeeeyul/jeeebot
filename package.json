@@ -1,5 +1,5 @@
 {
-	"name" : "Jeeebot",
+	"name" : "jeeebot",
 	"author" : "Jeeeyul Lee<jeeeyul@gmail.com>",
 	"description" : "Generates constants for XCode Projects",
 	"main" : "index.js",
