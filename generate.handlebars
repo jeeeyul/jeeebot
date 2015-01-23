@@ -1,0 +1,18 @@
+//
+//  {{filename}}
+//
+//  Created by Jeeebot on {{date}}.
+//  Copyright (c) {{year}} {{{copyright}}}. All rights reserved.
+//
+#ifndef {{macroName}}
+{{#each groups}}
+
+
+#pragma mark - {{name}}
+{{#each fields}}
+
+{{{comments}}}
+static const NSString* {{name}} = "{{{value}}}";
+{{/each}}{{/each}}
+
+#endif

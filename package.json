@@ -1,0 +1,28 @@
+{
+	"name" : "Jeeebot",
+	"author" : "Jeeeyul Lee<jeeeyul@gmail.com>",
+	"description" : "Generates constants for XCode Projects",
+	"main" : "index.js",
+
+	"scripts" : {
+		"test" : "grunt"
+	},
+
+	"dependencies" : {
+		"pegjs" : "*",
+		"handlebars" : "*",
+		"underscore-keypath" : "*",
+		"express" : "*",
+		"cli" : "*",
+		"moment" : "*",
+		"glob" : "*"
+	},
+
+	"devDependencies" : {
+		"should" : "*",
+		"grunt": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-mocha-test" : "*"
+	}
+}
