@@ -2,9 +2,9 @@
 	"name" : "jeeebot",
 	"author" : "Jeeeyul Lee<jeeeyul@gmail.com>",
 	"description" : "Generates constants for XCode Projects",
-	"bin" : "index.js",
+	"bin" : "node index.js",
 	"main" : "generator.js",
-	"version": "0.0.4",
+	"version": "0.0.5",
 
 	"scripts" : {
 		"test" : "grunt"
