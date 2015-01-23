@@ -23,7 +23,7 @@ exports.process = function(file){
 				if(each.multiline){
 					return;
 				}
-				var group = model.ensureGroup(each.text);
+				currentGroup = model.ensureGroup(each.text);
 				break;
 			}
 
