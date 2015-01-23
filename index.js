@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 var cli = require("cli");
-var filewalker = require('filewalker');
 var _ = require("underscore-keypath");
 var path = require("path");
 var Generator = require("./generator");
@@ -24,7 +23,6 @@ cli.main(function(args, options){
 
 	this.options.xcodeIO = require("./lib/xcode-io")();
 
-	console.log(this.options);
 	var generator;
 	var errors = [];
 
