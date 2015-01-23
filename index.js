@@ -31,9 +31,7 @@ cli.main(function(args, options){
 	}
 
 	else{
-		console.log(this.options.type);
 		try{
-			debugger;
 			generator = require(path.join(__dirname, "parts", options.type));
 		}catch(e){
 			me.error(e.stack)

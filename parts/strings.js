@@ -14,10 +14,9 @@ exports.process = function(file){
 		}
 	})();
 
+	var currentGroup = model.ensureGroup("default");
 	var ast = stringsParser.parse(fs.readFileSync(file).toString());
 	_(ast).each(function (each) {
-		var currentGroup = model.ensureGroup("default");
-
 		switch(each.type){
 			case "comment": {
 				if(each.multiline){
