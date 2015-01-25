@@ -54,11 +54,11 @@ Generator.prototype = {
 
 		var generator = require(path.join(__dirname, "parts", this.options.type))
 
-		_(this.options.xcodeIO.inputs).each(function(each){
+		_(this.options.inputs).each(function(each){
 			generator.process.call(me, each);
 		});
 
-		var filename = path.basename(this.options.xcodeIO.outputs[0]);
+		var filename = path.basename(this.options.output);
 		var content = template({
 			"filename" 	: filename,
 			"macroName" : filename.replace(/[^a-zA-Z0-9]/g, "_"),
@@ -71,12 +71,13 @@ Generator.prototype = {
 		if(this.options.output == "stdout"){
 			this.ok(content);
 		}else{
-			fs.writeFileSync(this.options.xcodeIO.outputs[0], content);
+			fs.writeFileSync(this.options.output, content);
 		}
 
 	},
 
 	ok : cli.ok,
+	info : cli.info,
 	error : cli.error
 };
 
