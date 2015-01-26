@@ -10,6 +10,6 @@ exports.process = function(assetDir){
 	_(assets).each(function(it){
 		var name = path.basename(it, path.extname(it));
 		var field = group.ensureField(name);
-		field.descriptions.push("An image constants for " + it);
+		field.descriptions.push("An image constants for " + path.basename(it));
 	});
 };
