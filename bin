@@ -40,7 +40,7 @@ cli.main(function(args, options){
 
 	else{
 		try{
-			generator = require(path.join(__dirname, "parts", options.type));
+			generator = require(path.join(__dirname, "lib", "parts", options.type));
 		}catch(e){
 			me.error(e.stack);
 			if(e.code == 'MODULE_NOT_FOUND'){
