@@ -5,7 +5,6 @@ var fs = require("fs");
 var Handlebars = require("handlebars");
 var path = require("path");
 var xmlUtil = require("./lib/xml-util");
-var template = Handlebars.compile(fs.readFileSync(path.join(__dirname, "reuse.handlebars")).toString());
 var model = require("./lib/model");
 
 exports.process = function(path){

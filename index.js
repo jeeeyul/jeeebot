@@ -7,7 +7,7 @@ var Generator = require("./generator");
 cli.option_width = 30;
 
 cli.parse({
-	type 		: ["t", "Generator type: segue | reuse | strings ", "string"],
+	type 		: ["t", "Generator type: segue | reuse | strings | asset", "string"],
 
 	fieldStyle	: [null, "Field naming style: uppercase | camelcase", "string", "camelcase"],
 	fieldPrefix : [null, "Prefix for field name", "string", "k"],
@@ -22,8 +22,13 @@ cli.main(function(args, options){
 	me.running = true;
 
 	var xcodeIO = require("./lib/xcode-io")();
-	options.inputs = xcodeIO.inputs;
-	options.output = xcodeIO.outputs[0];
+	if(xcodeIO.provided){
+		options.inputs = xcodeIO.inputs;
+		options.output = xcodeIO.outputs[0];
+	}
+	else{
+		options.inputs = args;
+	}
 
 	var generator;
 	var errors = [];
