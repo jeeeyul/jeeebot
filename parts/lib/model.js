@@ -61,8 +61,20 @@ function generateFieldName(value){
 	return _prefix + _currentRenderer(parseName(value));
 }
 
-function Field(value, description){
-	this.name = generateFieldName(value);
+function Field(){
+	var name, value, description;
+	if(arguments.length < 3){
+		console.log(arguments);
+		name = arguments[0];
+		value = arguments[0];
+		description = arguments[1];
+	}else{
+		name = arguments[0];
+		value = arguments[1];
+		description = arguments[2];
+	}
+
+	this.name = generateFieldName(name);
 	this.value = value;
 	this.descriptions = description ? [description] : [];
 	return this;

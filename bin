@@ -7,7 +7,7 @@ var Generator = require("./generator");
 cli.option_width = 30;
 
 cli.parse({
-	type 		: ["t", "Generator type: segue | reuse | strings | asset", "string"],
+	type 		: ["t", "Generator type: segue | reuse | strings | asset | coredata", "string"],
 
 	fieldStyle	: [null, "Field naming style: uppercase | camelcase", "string", "camelcase"],
 	fieldPrefix : [null, "Prefix for field name", "string", "k"],
