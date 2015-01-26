@@ -5,11 +5,17 @@ module.exports = function (grunt) {
 			options : {
 				reporter : "spec"
 			}
+		},
+		jshint : {
+			options: {
+				jshintrc : ".jshintrc"
+			},
+			source : ["bin", "lib/**/*.js", "test/**/*.js"]
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks("grunt-mocha-test");
 
-	grunt.registerTask("default", ["mochaTest:testCases"]);
+	grunt.registerTask("default", ["jshint", "mochaTest:testCases"]);
 };

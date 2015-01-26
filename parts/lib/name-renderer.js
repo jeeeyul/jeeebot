@@ -1,4 +1,0 @@
-
-function renderCamelCase(name){
-	
-}
