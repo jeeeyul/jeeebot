@@ -21,21 +21,19 @@ Handlebars.registerHelper("comments", function(){
 	var indent = " ";
 
 	_(this.descriptions).each(function (each) {
-		var lines = _(each.split(/[\r\n]+/g)).map(function (it){
-			return it.trim();
+		var lines = _(each.trim().split(/[\r\n]+/g)).map(function (it){
+			return indent + it.trim();
 		});
-		contents = contents.concat(lines);
-	});
-	if(contents.length == 1){
-		return "/// " + contents[0];
-	}
-	else{
-		var indented = _(contents).map(function (it){
-			return indent + it;
-		});
+		if(lines.length == 1){
+			contents = contents.concat("/**" + lines[0] + " */");
+		}
+		else{
+			contents = contents.concat(["/**"], lines, ["*/"]);
+		}
 
-		return ["/**"].concat(indented).concat(["*/"]).join("\n");
-	}
+	});
+
+	return contents.join("\n");
 });
 
 var template = Handlebars.compile(fs.readFileSync(path.join(__dirname, "generate.handlebars")).toString());
@@ -49,16 +47,18 @@ Generator.prototype = {
 	generate : function(){
 		var me = this;
 
+		this.ok(JSON.stringify(this.options, null, "  "));
+
 		model.prefix = this.options.fieldPrefix;
 		model.fieldStyle = this.options.fieldStyle;
 
 		var generator = require(path.join(__dirname, "parts", this.options.type))
 
-		_(this.options.xcodeIO.inputs).each(function(each){
+		_(this.options.inputs).each(function(each){
 			generator.process.call(me, each);
 		});
 
-		var filename = path.basename(this.options.xcodeIO.outputs[0]);
+		var filename = path.basename(this.options.output);
 		var content = template({
 			"filename" 	: filename,
 			"macroName" : filename.replace(/[^a-zA-Z0-9]/g, "_"),
@@ -71,7 +71,7 @@ Generator.prototype = {
 		if(this.options.output == "stdout"){
 			this.ok(content);
 		}else{
-			fs.writeFileSync(this.options.xcodeIO.outputs[0], content);
+			fs.writeFileSync(this.options.output, content);
 		}
 
 	},
