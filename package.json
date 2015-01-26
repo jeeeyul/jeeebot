@@ -4,7 +4,7 @@
 	"description" : "Generates constants for XCode Projects",
 	"bin" : "index.js",
 	"main" : "generator.js",
-	"version": "0.0.15",
+	"version": "0.0.16",
 
 	"scripts" : {
 		"test" : "grunt"

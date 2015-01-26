@@ -6,10 +6,11 @@ var model = require("./lib/model");
 exports.process = function(file){
 	var language = "";
 	(function(){
-		var pattern = /\/([a-zA-Z_-]+)\.lproj\//g;
+		console.log(file);
+		var pattern = /([a-zA-Z_-]+)\.lproj\//g;
 		var result = pattern.exec(file);
 
-		if(result[1]){
+		if(result && result[1]){
 			language = result[1];
 		}
 	})();
