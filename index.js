@@ -7,14 +7,14 @@ var Generator = require("./generator");
 cli.option_width = 30;
 
 cli.parse({
-	type				: ["t", "Generator type: segue | reuse | strings ", "string"],
+	type 		: ["t", "Generator type: segue | reuse | strings ", "string"],
 
 	fieldStyle	: [null, "Field naming style: uppercase | camelcase", "string", "camelcase"],
 	fieldPrefix : [null, "Prefix for field name", "string", "k"],
 
 	copyright 	: ["c", "Copyright", "string", "Jeeeyul Lee<jeeeyul@gmail.com>"],
 
-	output			: ["o", "Output file", "path"]
+	output		: ["o", "Output file", "path"]
 });
 
 cli.main(function(args, options){
@@ -43,11 +43,11 @@ cli.main(function(args, options){
 		}
 	}
 
-	if(options.inputs.length == 0){
+	if(this.options.inputs.length == 0){
 		errors.push("Input files are not specified.");
 	}
 
-	if(typeof options.output != "string"){
+	if(!this.options.output){
 		errors.push("Output file is not specified.");
 	}
 

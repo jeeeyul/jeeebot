@@ -77,6 +77,7 @@ Generator.prototype = {
 	},
 
 	ok : cli.ok,
+	info : cli.info,
 	error : cli.error
 };
 
