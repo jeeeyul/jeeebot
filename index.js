@@ -61,7 +61,7 @@ cli.main(function(args, options){
 		_(errors).each(function(it){
 			me.error(it);
 		});
-		return;
+		process.exit(1);
 	}
 
 	new Generator(this.options).generate();
