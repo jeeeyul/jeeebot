@@ -37,4 +37,10 @@ exports.process = function(modelPath){
 			group.addField(field);
 		});
 	});
+
+	_(xpath.select("/model/fetchRequest", doc)).map(function(it){
+		var name = it.getAttribute("name");
+		var group = model.ensureGroup("Fetch Requests");
+		group.addField(new model.Field("fetchRequest" + " " + name, name, "Fetch Rqeust for ‘" + it.getAttribute("entity") + "’ with predicate ‘" + it.getAttribute("predicateString") + "’"))
+	});
 };
