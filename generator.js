@@ -45,6 +45,7 @@ function Generator(options){
 
 Generator.prototype = {
 	generate : function(){
+		console.log(JSON.stringify(this.options, null, "  "));
 		var me = this;
 
 		model.prefix = this.options.fieldPrefix;
