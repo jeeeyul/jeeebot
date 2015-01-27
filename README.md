@@ -1,5 +1,18 @@
 # jeeebot
-Xcode Constant Generator
+
+**Jeeebot** is a constants generator for XCode Projects.
+
+Using `NSString*` as a key easily cause serious misstake that is hard to find.
+**Jeeebot** generates keys as constants so, Compiler can check this errors easiy.
+XCode also prevent mistake and can suggest code completion with **Jeeebot**
+
+**Jeeebot** can generate constants for:
+
+* Localized String Keys for `.strings` files.
+* Segue Identifiers from `.Stroyboard` files.
+* Reuse Identifiers from `.Stroyboard` and `.xib` files.
+* Named Image keys from `.asset` files.
+* Entity names, attribute names and fetch requests from core data model definition.
 
 [![Build Status](https://travis-ci.org/jeeeyul/jeeebot.svg)](https://travis-ci.org/jeeeyul/jeeebot)
 
