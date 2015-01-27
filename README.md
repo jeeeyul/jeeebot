@@ -50,8 +50,19 @@ static NSString* const kLangHello = @"hello";
 $ jeeebot -t segue Storyboard.storyboard --fieldPrefix kSegue -o SegueIdentifiers.h
 ```
 
-## Keys fo Reuse Identifiers
+## Keys for Reuse Identifiers
 ```bash
 $ jeeebot -t reuse Storyboard.storyboard --fieldPrefix kReuse -o ReuseIdentifiers.h
 ```
+
+## Keys for Image Assets
+```bash
+$ jeeebot -t asset Media.assets --fieldPrefix kImage -o NamedImages.h
+```
+
+## Keys for Core Data entities and attributes
+```bash
+$ jeeebot -t coredata "Test.xcdatamodeld/Test 4.xcdatamodel" --fieldPrefix kModel -o ModelKeys.h
+```
+
 
