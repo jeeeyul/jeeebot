@@ -9,7 +9,7 @@ Xcode Constant Generator
 $ npm install jeeebot -g
 ```
 
-```bash
+```
 $ jeeebot -h
 Usage:
   jeeebot [OPTIONS] [ARGS]
