@@ -9,6 +9,21 @@ Xcode Constant Generator
 $ npm install jeeebot -g
 ```
 
+```bash
+$ jeeebot -h
+Usage:
+  jeeebot [OPTIONS] [ARGS]
+
+Options: 
+  -t, --type STRING           Generator type: segue | reuse | strings | asset | 
+                              coredata 
+      --fieldStyle [STRING]   Field naming style: uppercase | camelcase  (Default is camelcase)
+      --fieldPrefix [STRING]  Prefix for field name (Default is k)
+  -c, --copyright [STRING]    Copyright (Default is Jeeeyul Lee<jeeeyul@gmail.com>)
+  -o, --output PATH           Output file
+  -h, --help                  Display help and usage details
+```
+
 
 ## Keys for localized string
 
