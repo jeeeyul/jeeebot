@@ -49,6 +49,48 @@ static NSString* const kLangHello = @"hello";
 ```bash
 $ jeeebot -t segue Storyboard.storyboard --fieldPrefix kSegue -o SegueIdentifiers.h
 ```
+```h
+//
+//  RPSegues.derived.h
+//
+//  Created by Jeeebot on Mon, Jan 26, 2015 12:44 PM.
+//  Copyright (c) 2015 Jeeeyul Lee<jeeeyul@gmail.com>. All rights reserved.
+//
+#ifndef RPSegues_derived_h
+
+
+#pragma mark - Root View Controller
+
+/**
+ A Constant for showDetail segue identifier ‘edit-sort’.
+ Root View Controller -> Sort Controller (showDetail)
+*/
+static NSString* const kSegueEditSort = @"edit-sort";
+
+/**
+ A Constant for showDetail segue identifier ‘show’.
+ Root View Controller -> Calendar Settings Editor (showDetail)
+*/
+static NSString* const kSegueShow = @"show";
+
+
+#pragma mark - Calendar Settings Editor
+
+/**
+ A Constant for show segue identifier ‘edit-priority-filter’.
+ Calendar Settings Editor -> Priority Filter Editor (show)
+*/
+static NSString* const kSegueEditPriorityFilter = @"edit-priority-filter";
+
+/**
+ A Constant for show segue identifier ‘edit-due-filter’.
+ Calendar Settings Editor -> Due Date Filter Editor (show)
+*/
+static NSString* const kSegueEditDueFilter = @"edit-due-filter";
+
+ 
+#endif
+```
 
 ## Keys for Reuse Identifiers
 ```bash
