@@ -1,6 +1,6 @@
 # jeeebot
 
-**Jeeebot** is a constants generator for XCode Projects.
+**Jeeebot** is a constants generator for XCode Projects that is written with Node.JS.
 
 Using `NSString*` as a key easily cause serious misstake that is hard to find.
 **Jeeebot** generates keys as constants so, Compiler can check this errors easiy.
@@ -15,6 +15,10 @@ XCode also prevent mistake and can suggest code completion with **Jeeebot**
 * Entity names, attribute names and fetch requests from core data model definition.
 
 **Jeeebot** can be used as cli tool or can be [integrated with XCode](https://github.com/jeeeyul/jeeebot/wiki/Integration-with-Xcode).
+
+This project was started to use for my commercial ios projects.
+I'v helped a lot from great open source communities about the developing ios apps.
+Now I'm contributing my tool to pay back.
 
 [![Build Status](https://travis-ci.org/jeeeyul/jeeebot.svg)](https://travis-ci.org/jeeeyul/jeeebot)
 
