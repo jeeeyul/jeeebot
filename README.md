@@ -119,10 +119,75 @@ static NSString* const kReuseDefault = @"default";
 ```bash
 $ jeeebot -t asset Media.assets --fieldPrefix kImage -o NamedImages.h
 ```
+```h
+//
+//  RPImages.derived.h
+//
+//  Created by Jeeebot on Mon, Jan 26, 2015 12:44 PM.
+//  Copyright (c) 2015 Jeeeyul Lee<jeeeyul@gmail.com>. All rights reserved.
+//
+#ifndef RPImages_derived_h
+
+
+#pragma mark - default
+
+/** An image constants for AppIcon.appiconset */
+static NSString* const kImageAppIcon = @"AppIcon";
+
+/** An image constants for Logo.imageset */
+static NSString* const kImageLogo = @"Logo";
+
+ 
+#endif
+```
 
 ## Keys for Core Data entities and attributes
 ```bash
 $ jeeebot -t coredata "Test.xcdatamodeld/Test 4.xcdatamodel" --fieldPrefix kModel -o ModelKeys.h
 ```
+```h
+//
+//  RPModelKeys.derived.h
+//
+//  Created by Jeeebot on Tue, Jan 27, 2015 9:58 AM.
+//  Copyright (c) 2015 Jeeeyul Lee<jeeeyul@gmail.com>. All rights reserved.
+//
+#ifndef RPModelKeys_derived_h
 
+
+#pragma mark - RPCalendarSettings
+
+/** A constants for entity name ‘RPCalendarSettings’ */
+static NSString* const kModelRPCalendarSettings = @"RPCalendarSettings";
+
+/** calendarIdentifier:[String] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsCalendarIdentifier = @"calendarIdentifier";
+
+/** displayInWidget:[Boolean] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsDisplayInWidget = @"displayInWidget";
+
+/** displayNotScheduled:[Boolean] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsDisplayNotScheduled = @"displayNotScheduled";
+
+/** dueDateFilter:[Integer 32] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsDueDateFilter = @"dueDateFilter";
+
+/** filterCompoundRule:[Integer 32] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsFilterCompoundRule = @"filterCompoundRule";
+
+/** order:[Integer 32] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsOrder = @"order";
+
+/** priorityFilter:[Integer 32] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsPriorityFilter = @"priorityFilter";
+
+/** useDueDateFilter:[Boolean] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsUseDueDateFilter = @"useDueDateFilter";
+
+/** usePriorityFilter:[Boolean] attribute of RPCalendarSettings */
+static NSString* const kModelRPCalendarSettingsUsePriorityFilter = @"usePriorityFilter";
+
+ 
+#endif
+```
 
