@@ -5,9 +5,21 @@ Xcode Constant Generator
 
 
 ## .strings
-```strings
+
+en.lproj/strings.strings:
+```
 # Jeeebot
-"hello" = "world";
+"hello" = "Hello";
+```
+
+ko.lproj/strings.strings:
+```
+# Jeeebot
+"hello" = "안녕하세요!";
+```
+
+```bash
+$ jeeebot -t strings *.lproj/strings.strings --fieldPrefix kLang
 ```
 
 will generates:
@@ -24,9 +36,11 @@ will generates:
 
 #pragma mark - Jeeebot
 
-/** world */
-static NSString* const kHello = @"hello";
+/** en : Hello! */
+/** ko : 안녕하세요! */
+static NSString* const kLangHello = @"hello";
 
 
 #endif
+
 ```
