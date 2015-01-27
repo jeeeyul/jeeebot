@@ -14,6 +14,8 @@ XCode also prevent mistake and can suggest code completion with **Jeeebot**
 * Named Image keys from `.asset` files.
 * Entity names, attribute names and fetch requests from core data model definition.
 
+**Jeeebot** can be used as cli tool or can be [integrated with XCode](https://github.com/jeeeyul/jeeebot/wiki/Integration-with-Xcode).
+
 [![Build Status](https://travis-ci.org/jeeeyul/jeeebot.svg)](https://travis-ci.org/jeeeyul/jeeebot)
 
 
