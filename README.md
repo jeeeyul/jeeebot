@@ -44,3 +44,8 @@ static NSString* const kLangHello = @"hello";
 #endif
 
 ```
+
+## Keys for segue identifier
+```bash
+$ jeeebot -t strings Storyboard.storyboard --fieldPrefix kSegue -o SegueIdentifiers.h
+```
