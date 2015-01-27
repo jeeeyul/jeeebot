@@ -96,6 +96,24 @@ static NSString* const kSegueEditDueFilter = @"edit-due-filter";
 ```bash
 $ jeeebot -t reuse Storyboard.storyboard --fieldPrefix kReuse -o ReuseIdentifiers.h
 ```
+```h
+//
+//  RPReuses.derived.h
+//
+//  Created by Jeeebot on Mon, Jan 26, 2015 12:44 PM.
+//  Copyright (c) 2015 Jeeeyul Lee<jeeeyul@gmail.com>. All rights reserved.
+//
+#ifndef RPReuses_derived_h
+
+
+#pragma mark - Sort Controller
+
+/** A constant for reuse identifier ‘default’ */
+static NSString* const kReuseDefault = @"default";
+
+ 
+#endif
+```
 
 ## Keys for Image Assets
 ```bash
