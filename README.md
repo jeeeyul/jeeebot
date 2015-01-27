@@ -47,5 +47,11 @@ static NSString* const kLangHello = @"hello";
 
 ## Keys for segue identifier
 ```bash
-$ jeeebot -t strings Storyboard.storyboard --fieldPrefix kSegue -o SegueIdentifiers.h
+$ jeeebot -t segue Storyboard.storyboard --fieldPrefix kSegue -o SegueIdentifiers.h
 ```
+
+## Keys fo Reuse Identifiers
+```bash
+$ jeeebot -t reuse Storyboard.storyboard --fieldPrefix kReuse -o ReuseIdentifiers.h
+```
+
