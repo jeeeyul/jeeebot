@@ -4,6 +4,12 @@ Xcode Constant Generator
 [![Build Status](https://travis-ci.org/jeeeyul/jeeebot.svg)](https://travis-ci.org/jeeeyul/jeeebot)
 
 
+## Installation
+```bash
+$ npm install jeeebot -g
+```
+
+
 ## Keys for localized string
 
 en.lproj/strings.strings:
@@ -88,7 +94,7 @@ static NSString* const kSegueEditPriorityFilter = @"edit-priority-filter";
 */
 static NSString* const kSegueEditDueFilter = @"edit-due-filter";
 
- 
+
 #endif
 ```
 
@@ -111,7 +117,7 @@ $ jeeebot -t reuse Storyboard.storyboard --fieldPrefix kReuse -o ReuseIdentifier
 /** A constant for reuse identifier ‘default’ */
 static NSString* const kReuseDefault = @"default";
 
- 
+
 #endif
 ```
 
@@ -137,7 +143,7 @@ static NSString* const kImageAppIcon = @"AppIcon";
 /** An image constants for Logo.imageset */
 static NSString* const kImageLogo = @"Logo";
 
- 
+
 #endif
 ```
 
@@ -187,7 +193,6 @@ static NSString* const kModelRPCalendarSettingsUseDueDateFilter = @"useDueDateFi
 /** usePriorityFilter:[Boolean] attribute of RPCalendarSettings */
 static NSString* const kModelRPCalendarSettingsUsePriorityFilter = @"usePriorityFilter";
 
- 
+
 #endif
 ```
-

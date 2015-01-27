@@ -9,8 +9,9 @@
 
 #pragma mark - Jeeebot
 
-/** world */
-static NSString* const kHello = @"hello";
+/** en : Hello! */
+/** ko : 안녕하세요! */
+static NSString* const kLangHello = @"hello";
 
 
 #endif

@@ -14,9 +14,12 @@ function getExpectedContent(relPath){
 describe("generate strings", function(){
     it("hello", function(){
         var g = new Generator({
-            fieldPrefix : "k",
+            fieldPrefix : "kLang",
             fieldStyle : "camelcase",
-            inputs : [path.join(__dirname, "dummy-input", "strings.strings")],
+            inputs : [
+              path.join(__dirname, "dummy-input", "en.lproj", "strings.strings"),
+              path.join(__dirname, "dummy-input", "ko.lproj", "strings.strings")
+            ],
             output : "strings.h",
             type : "strings",
             templateOverwrite : {
