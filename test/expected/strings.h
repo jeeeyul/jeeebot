@@ -7,13 +7,10 @@
 #ifndef strings_h
 
 
-#pragma mark - default
+#pragma mark - Jeeebot
 
 /** world */
 static NSString* const kHello = @"hello";
-
-/** 42 */
-static NSString* const kKk = @"kk";
 
 
 #endif
