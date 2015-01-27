@@ -19,7 +19,7 @@ ko.lproj/strings.strings:
 ```
 
 ```bash
-$ jeeebot -t strings *.lproj/strings.strings --fieldPrefix kLang
+$ jeeebot -t strings *.lproj/strings.strings --fieldPrefix kLang -o strings.h
 ```
 
 will generates:
