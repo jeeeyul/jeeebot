@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inAppLocaleIdentifier</key>
+	<string>os</string>
+	<key>zeroBased</key>
+	<true/>
+	<key>firstDayOfWeek</key>
+	<integer>0</integer>
+	<key>displayOrder</key>
+	<integer>0</integer>
+	<key>displayFilter</key>
+	<integer>0</integer>
+	<key>displayFilterCustomValue</key>
+	<integer>10</integer>
+	<key>widgetStyle</key>
+	<integer>0</integer>
+	<key>widgetEffect</key>
+	<true/>
+	<key>privacyProtection</key>
+	<false/>
+	<key>privacyProtectionUseTouchID</key>
+	<true/>
+	<key>decorationType</key>
+	<integer>1</integer>
+</dict>
+</plist>
