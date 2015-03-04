@@ -24,6 +24,9 @@ Now I'm contributing my tool to pay back.
 
 
 ## Installation
+
+You need to install [node](http://nodejs.org) to use jeeebot.
+
 ```bash
 $ npm install jeeebot -g
 ```
@@ -35,7 +38,7 @@ Usage:
 
 Options: 
   -t, --type STRING           Generator type: segue | reuse | strings | asset | 
-                              coredata 
+                              coredata | plist 
       --fieldStyle [STRING]   Field naming style: uppercase | camelcase  (Default is camelcase)
       --fieldPrefix [STRING]  Prefix for field name (Default is k)
   -c, --copyright [STRING]    Copyright (Default is Jeeeyul Lee<jeeeyul@gmail.com>)
