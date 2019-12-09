@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#! node
 var cli = require("cli");
 var _ = require("underscore-keypath");
 var path = require("path");
