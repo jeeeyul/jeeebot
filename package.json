@@ -1,32 +1,30 @@
 {
-	"name" : "jeeebot",
-	"author" : "Jeeeyul Lee<jeeeyul@gmail.com>",
-	"description" : "Generates constants for XCode Projects",
-	"bin" : "bin",
-	"main" : "generator.js",
-	"version": "0.0.28",
-
-	"scripts" : {
-		"test" : "grunt"
+	"name": "jeeebot",
+	"author": "Jeeeyul Lee<jeeeyul@gmail.com>",
+	"description": "Generates constants for XCode Projects",
+	"bin": "bin",
+	"main": "generator.js",
+	"version": "0.0.30",
+	"scripts": {
+		"test": "grunt"
 	},
-
-	"dependencies" : {
-		"pegjs" : "*",
-		"handlebars" : "*",
-		"underscore-keypath" : "*",
-		"express" : "*",
-		"cli" : "*",
-		"moment" : "*",
-		"glob" : "*",
-		"xpath" : "*",
-		"xmldom" : "*"
+	"dependencies": {
+		"cli": "*",
+		"express": "*",
+		"glob": "*",
+		"handlebars": "*",
+		"mocha": "^6.2.2",
+		"moment": "*",
+		"pegjs": "*",
+		"underscore-keypath": "*",
+		"xmldom": "*",
+		"xpath": "*"
 	},
-
-	"devDependencies" : {
-		"should" : "*",
+	"devDependencies": {
+		"should": "*",
 		"grunt": "*",
 		"grunt-contrib-jshint": "*",
 		"grunt-contrib-uglify": "*",
-		"grunt-mocha-test" : "*"
+		"grunt-mocha-test": "*"
 	}
 }
